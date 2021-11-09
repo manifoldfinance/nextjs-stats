@@ -14,5 +14,5 @@ RUN git config --global user.name 'next stats'
 
 RUN apt update && apt install apache2-utils -y
 
-COPY --chmod 0755 entrypoint.sh /entrypoint.sh
+COPY --chmod=0755 entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
